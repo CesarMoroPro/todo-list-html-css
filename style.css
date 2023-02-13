@@ -1,0 +1,94 @@
+/*^ GÉNÉRAUX */
+body {
+        margin: 10px;
+        font-family: "Raleway";
+}
+
+h1, h2 {
+        font-family: "Tourney";
+        letter-spacing: 2px;
+}
+
+button {
+        font-family: "raleway";
+}
+
+h1 {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 50px;
+        font-size: 3em;
+        letter-spacing: 5px;
+}
+
+/*^ HEADER */
+#top {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+}
+
+#top-left {
+        width: 65%;
+        padding-right: 10px;
+        text-align: center;
+}
+
+#top-right {
+        width: 35%;
+        padding-left: 10px;
+}
+
+#top-right p {
+        text-align: center;
+}
+
+.group-numbers {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+}
+
+/*^ MAIN */
+main {
+        display: flex;
+        flex-direction: row;;
+}
+
+#main-left {
+        width: 65%;
+        padding-right: 10px;
+}
+
+#main-right {
+        width: 35%;
+        padding-left: 10px;;
+}
+
+.one-task {
+        width: 95%;
+        border: solid 1px #FF00FF;
+        border-radius: 6px;
+        margin-bottom: 20px;
+        padding: 5px 10px 5px;
+}
+
+.title-buttons {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+}
+
+.title-buttons button {
+        margin: 5px;
+}
+
+
+
+/*^ FOOTER */
+footer {
+        text-align: center;
+        font-size: 0.8em;
+}

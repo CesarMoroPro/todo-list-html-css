@@ -4,9 +4,172 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- FICHIER CSS -->
+        <link rel="stylesheet" href="style.css">
+
+        <!-- GOOGLE FONTS : Tourney -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Tourney:wght@200&display=swap" rel="stylesheet">
+
+        <!-- GOOGLE FONTS : Raleway -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+
         <title>Todo List - HTML / CSS training</title>
 </head>
 <body>
-        
+        <header>
+                <h1>Ma Todo List</h1>
+
+                <section id="top">
+                        <div id="top-left">
+                                <div class="top-title">
+                                        <h2>Ajouter une nouvelle tâche</h2>
+                                </div>
+                                <div class="top-input">
+                                        <input type="text">
+                                        <button type="submit">Ajouter</button>
+                                </div>
+                        </div>
+                        
+                        <div id="top-right">
+                                <div class="top-title">
+                                        <h3>Nombre de tâches existantes</h3>
+                                </div>
+                                <p class="numbers">X</p>
+
+                                <div class="top-title">
+                                        <h3>Tâches terminées</h3>
+                                </div>
+                                <div class="group-numbers">
+                                        <p class="numbers">X</p>
+                                        <p class="numbers">X%</p>
+                                </div>
+                        </div>
+                </section>
+        </header>
+
+        <main>
+                <section id="main-left">
+                        <h2>Liste des tâches</h2>
+
+                        <div class="all-tasks">
+                                <div class="one-task">
+                                        <div class="title-buttons">
+                                                <h3>Finir ce projet statique</h3>
+                                                <div>
+                                                        <button>En cours</button>
+                                                        <button>Terminée</button>
+                                                </div>
+                                        </div>
+                                        <p>Cette tâche concerne ce projet. Lorsqu'il sera terminé, la div de cette tâche devra passer dans la partie "Tâches terminées", et cette description ne sera plus visible.</p>
+                                </div>
+
+                                <div class="one-task">
+                                        <div class="title-buttons">
+                                                <h3>Ajouter un peu de style à ce projet</h3>
+                                                <div>
+                                                        <button>En cours</button>
+                                                        <button>Terminée</button>
+                                                </div>
+                                        </div>
+                                        <p>Ok, là on la base de chez la base. Mais ! PFFFFOUUUAAAA que c'est moche ! Il est grand temps de passer sur le syle et de se faire un projet tout beau, comme un camion tuning.</p>
+                                </div>
+
+                                <div class="one-task">
+                                        <div class="title-buttons">
+                                                <h3>Ajouter de l'interaction JS, Vanilla svp !</h3>
+                                                <div>
+                                                        <button>En cours</button>
+                                                        <button>Terminée</button>
+                                                </div>
+                                        </div>
+                                        <p>Et si on ajoutait quelques petits trucs sympa en JS, des événements au survol, au clic, ou pourquoi pas aléatoires ? Mais, attention, animations style neige interdite ! À moins que...</p>
+                                </div>
+
+                                <div class="one-task">
+                                        <div class="title-buttons">
+                                                <h3>Travaillons plutôt en TypeScript ?</h3>
+                                                <div>
+                                                        <button>En cours</button>
+                                                        <button>Terminée</button>
+                                                </div>
+                                        </div>
+                                        <p>Le JS, c'est top, c'est cool, c'est trop bien. Mais il serait peut-être temps d'apprendre TypeScript. Après tout, le typage permettra de réduire les erreurs. À ce qu'il paraît, TypeScript est plus simple à prendre en main que JavaScript.</p>
+                                </div>
+
+                                <div class="one-task">
+                                        <div class="title-buttons">
+                                                <h3>Ma finalité ? Vue.js !</h3>
+                                                <div>
+                                                        <button>En cours</button>
+                                                        <button>Terminée</button>
+                                                </div>
+                                        </div>
+                                        <p>Enfin, m'y voilà ! Mon objectif : apprendre Vue3 et me spécialiser sur en tant que Dév Front-end Vue.js.</p>
+                                </div>
+
+                                <div class="one-task">
+                                        <div class="title-buttons">
+                                                <h3>Dynamiser ce projet avec du Node.js et du SQL</h3>
+                                                <div>
+                                                        <button>En cours</button>
+                                                        <button>Terminée</button>
+                                                </div>
+                                        </div>
+                                        <p>Il est temps de dynamiser un peu tout ce projet en jouant avec Node et SQL. Ce sera l'occasion d'apprendre Node. Le JavaScript, c'est trop bien.</p>
+                                </div>
+
+                                <div class="one-task">
+                                        <div class="title-buttons">
+                                                <h3>JS Vanilla, Vue, Node... Et Nuxt. js alors ?</h3>
+                                                <div>
+                                                        <button>En cours</button>
+                                                        <button>Terminée</button>
+                                                </div>
+                                        </div>
+                                        <p>Suite logique, un peu de Node.js pour gérer le back. Bon, vraiment, mon ambition c'est d'être spécialiste Vue.js. Mais il est clair qu'avoir les bases de Node.js est nécessaire pour mieux appréhender un projet dans sa globalité !</p>
+                                </div>
+
+                                <div class="one-task">
+                                        <div class="title-buttons">
+                                                <h3>Oui, j'ai trahi PHP...</h3>
+                                                <div>
+                                                        <button>En cours</button>
+                                                        <button>Terminée</button>
+                                                </div>
+                                        </div>
+                                        <p>J'aime de plus en plus l'Univers JS. Mais à la base, j'ai appris à développer des thèmes WordPress, et ça c'est en PHP, alors pourquoi ne pas gérer le back de ce projet aussi en PHP en souvenir du bon vieux temps ?</p>
+                                </div>
+                        </div>
+                </section>
+
+
+
+                <section id="main-right">
+                        <h2>Tâches terminées</h2>
+
+                        <div class="all-tasks">
+                                <div class="one-task">
+                                        <div class="title-buttons">
+                                                <h3>Sweet Home Alabama !</h3>
+                                                <div>
+                                                        <button>Remettre</button>
+                                                        <button>Archiver</button>
+                                                        <button>Supprimer</button>
+                                                </div>
+                                        </div>
+                                        <p>Ce n'est pas une tâche, simplement, en faisant ce projet statique, Spotify me passe cette musique et c'est sympa !</p>
+                                </div>
+                        </div>
+                </section>
+        </main>
+
+        <footer>
+                <h2 class="footer-title">Ce projet d'entraînement aux langages HTML et CSS a été réalisé par <strong>César MORO</strong></h2>
+        </footer>
 </body>
 </html>
